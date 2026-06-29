@@ -1,0 +1,25 @@
+>>> passenger_name = "Jiyansh"
+>>> destination = "Goa"
+>>> ticket_price = 850.50
+>>> number_of_tickets = 3
+>>> is_available = True
+>>> print("passenger name:", passenger_name)
+passenger name: Jiyansh
+>>> print("destination:", destination)
+destination: Goa
+>>> print("ticket price:", ticket_price)
+ticket price: 850.5
+>>> print("number of tickets:", number_of_tickets)
+number of tickets: 3
+>>> print("Tickets available:", is_available)
+Tickets available: True
+>>> print(type(passenger_name))
+<class 'str'>
+>>> print(type(destination))
+<class 'str'>
+>>> print(type(ticket_price))
+<class 'float'>
+>>> print(type(number_of_tickets))
+<class 'int'>
+>>> print(type(is_available))
+<class 'bool'>
