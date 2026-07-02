@@ -1,0 +1,77 @@
+>>>> books=["Harry Potter","Matilda,The Jungle Book","charlotte's web,"Wonder"]
+  File "<python-input-0>", line 1
+    books=["Harry Potter","Matilda,The Jungle Book","charlotte's web,"Wonder"]
+                                                                            ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> books=["Harry Potter","Matilda,The Jungle Book","charlotte's web,"Wonder"]
+  File "<python-input-1>", line 1
+    books=["Harry Potter","Matilda,The Jungle Book","charlotte's web,"Wonder"]
+                                                                            ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> books=["Harry Potter","Matilda,The Jungle Book","charlotte's web","Wonder"]
+>>> print("Library Book list:",books)
+Library Book list: ['Harry Potter', 'Matilda,The Jungle Book', "charlotte's web", 'Wonder']
+>>> print("Total Books:", len(books))
+Total Books: 4
+>>> print("First Book:",books[0])
+First Book: Harry Potter
+>>> print("Last Book:",books[3])
+Last Book: Wonder
+>>> print("First three books:",books[:3])
+First three books: ['Harry Potter', 'Matilda,The Jungle Book', "charlotte's web"]
+>>> books.append("Diary of a wimpy kid")
+>>> print("After Adding a book:",books)
+After Adding a book: ['Harry Potter', 'Matilda,The Jungle Book', "charlotte's web", 'Wonder', 'Diary of a wimpy kid']
+>>> books.remove("Matilda,The Jungle Book")
+>>> print("After Removing a Book:",books)
+After Removing a Book: ['Harry Potter', "charlotte's web", 'Wonder', 'Diary of a wimpy kid']
+>>> books.sort()
+>>> print("Books Sorted Alphabetically:",books)
+Books Sorted Alphabetically: ['Diary of a wimpy kid', 'Harry Potter', 'Wonder', "charlotte's web"]
+>>> books.reverse()
+>>> print("Books in Reserve Order:",books)
+Books in Reserve Order: ["charlotte's web", 'Wonder', 'Harry Potter', 'Diary of a wimpy kid']
+>>> librarian={"name":"Ms.Shivali","section":"Children's Books","experience":5}
+>>> print("Librarian Profile:",librarian)
+Librarian Profile: {'name': 'Ms.Shivali', 'section': "Children's Books", 'experience': 5}
+>>> print("Librarian  Name:",librarian["name"])
+Librarian  Name: Ms.Shivali
+>>> print("Library Section:",librarian["section"])
+Library Section: Children's Books
+>>> print("Experience:",librarian.get("experience"))
+Experience: 5
+>>> librarian["experience"]=6
+>>> print("Updated Experience:",librarian)
+Updated Experience: {'name': 'Ms.Shivali', 'section': "Children's Books", 'experience': 6}
+>>> librarian["email"]="priya@schoollibrary.com"
+>>> print("After Adding Email:",librarian)
+After Adding Email: {'name': 'Ms.Shivali', 'section': "Children's Books", 'experience': 6, 'email': 'priya@schoollibrary.com'}
+>>> librarian.pop("section")
+"Children's Books"
+>>> print("After Removing Section:",librarian)
+After Removing Section: {'name': 'Ms.Shivali', 'experience': 6, 'email': 'priya@schoollibrary.com'}
+>>> book_ids=[101,102,103,104,105]
+>>> book_names=["Wonder","Harry Potter","charlotte's web","Diary of a wimpy"]
+>>> book_ids=[101,102,103,104]
+>>> book_directory=dict(zip(book_ids,book_names))
+>>> print("Book Directory:",book_directory)
+Book Directory: {101: 'Wonder', 102: 'Harry Potter', 103: "charlotte's web", 104: 'Diary of a wimpy'}
+>>> print("=======================================")
+=======================================
+>>> print("LIBRARY ORGANISER SUMMARY")
+LIBRARY ORGANISER SUMMARY
+>>> PRINT("==============================")
+Traceback (most recent call last):
+  File "<python-input-34>", line 1, in <module>
+    PRINT("==============================")
+    ^^^^^
+NameError: name 'PRINT' is not defined
+>>> print("========================================")
+========================================
+>>> print("Available Books:",books)
+Available Books: ["charlotte's web", 'Wonder', 'Harry Potter', 'Diary of a wimpy kid']
+>>> print("Librarian Details:",librarian)
+Librarian Details: {'name': 'Ms.Shivali', 'experience': 6, 'email': 'priya@schoollibrary.com'}
+>>> print("Book ID Directory:",book_directory)
+Book ID Directory: {101: 'Wonder', 102: 'Harry Potter', 103: "charlotte's web", 104: 'Diary of a wimpy'}
+>>> print("============================================")
