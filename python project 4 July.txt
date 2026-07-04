@@ -1,0 +1,98 @@
+>>> student_profile=("Jiyansh","Grade 4","Section A", 7)
+>>> print("Student Profile:",student_profile)
+Student Profile: ('Jiyansh', 'Grade 4', 'Section A', 7)
+>>> student_name=student_profile[0]
+>>> grade=student-profile[1]
+Traceback (most recent call last):
+  File "<python-input-3>", line 1, in <module>
+    grade=student-profile[1]
+          ^^^^^^^
+NameError: name 'student' is not defined
+>>> grade=student_profile[1]
+>>> section=student_profile[2]
+>>> total_subjects=student_profile[3]
+>>> print("\nStudent Name:",student_name)
+
+Student Name: Jiyansh
+>>> print("Grade:",grade)
+Grade: Grade 4
+>>> print("Section:",section)
+Section: Section A
+>>> print("Total SUbjects:",total_subjects)
+Total SUbjects: 7
+>>> print("First two details:",student_profile[0:2])
+First two details: ('Jiyansh', 'Grade 4')
+>>> monday_subjects={"English","Hindi","Sports","Maths","Science","Music"}
+>>> tuesday_subjects{"Punjabi","English","Sports","Art","Maths","History"}
+  File "<python-input-13>", line 1
+    tuesday_subjects{"Punjabi","English","Sports","Art","Maths","History"}
+                    ^
+SyntaxError: invalid syntax
+>>>  tuesday_subjects={"Punjabi","English","Sports","Art","Maths","History"}
+  File "<python-input-14>", line 1
+    tuesday_subjects={"Punjabi","English","Sports","Art","Maths","History"}
+IndentationError: unexpected indent
+>>> tuesday_subjects={"Punjabi","English","Sports","Art","Maths","History"}
+>>> print("\nMonday Subjects:",monday_subjects)
+
+Monday Subjects: {'English', 'Sports', 'Hindi', 'Maths', 'Music', 'Science'}
+>>> print("Tuesday Subjects:",tuesday_subjects)
+Tuesday Subjects: {'English', 'Sports', 'Maths', 'Art', 'Punjabi', 'History'}
+>>> monday_subjects.add("library")
+>>> print("\nAfter adding Library to Monday:",monday_subjects)
+
+After adding Library to Monday: {'English', 'Sports', 'Hindi', 'Maths', 'Music', 'Science', 'library'}
+>>> monday_subjects.discard("Art")
+>>> monday_subjects.discard("Music")
+>>> print("After removing Music from Monday:",monday_subjects)
+After removing Music from Monday: {'English', 'Sports', 'Hindi', 'Maths', 'Science', 'library'}
+>>> tuesday_subjects.add("Computer")
+>>> print("After adding Computer to Tuesday:",tuesday.subjects)
+Traceback (most recent call last):
+  File "<python-input-24>", line 1, in <module>
+    print("After adding Computer to Tuesday:",tuesday.subjects)
+                                              ^^^^^^^
+NameError: name 'tuesday' is not defined
+>>> print("After adding Computer to Tuesday:",tuesday_subjects)
+After adding Computer to Tuesday: {'English', 'Sports', 'Maths', 'Art', 'Computer', 'Punjabi', 'History'}
+>>> tuesday_subjects.discard("Punjabi")
+>>> print("After removing Punjabi from Tuesday:",tuesday_subjects)
+After removing Punjabi from Tuesday: {'English', 'Sports', 'Maths', 'Art', 'Computer', 'History'}
+>>> all_subjects=monday_subjects.union(tuesday_subjects)
+>>> common_subjects=monday_subjects.intersection(tuesday_subjects)
+>>> only_monday=monday_subjects.difference(tuesday_subjects)
+>>> only_tuesday=tuesday_subjects.difference(monday_subjects)
+>>> different_subjects=monday_subjects.symmetric_difference(tuesday_subjects)>>>> different_subjects=monday_subjects.symmetric_difference(tuesday_subjects)
+>>> print("\nAll Subjects:",all_subjects)
+
+All Subjects: {'English', 'Art', 'Science', 'Computer', 'Sports', 'Hindi', 'Maths', 'library', 'History'}
+>>> print("Common Subjects:",common_subjects)
+Common Subjects: {'English', 'Sports', 'Maths'}
+>>> print("Only Monday Subjects:",only_monday)
+Only Monday Subjects: {'Hindi', 'library', 'Science'}
+>>> print("Only Tuesday Subjects:",only_tuesday)
+Only Tuesday Subjects: {'Computer', 'History', 'Art'}
+>>> print("Different Sujects:",different_subjects)
+Different Sujects: {'Hindi', 'library', 'Art', 'Science', 'Computer', 'History'}
+>>> print("\n==================================")
+
+==================================
+>>> print("SCHOOL SUBJECT PLANNER SUMMARY")
+SCHOOL SUBJECT PLANNER SUMMARY
+>>> print("====================================")
+====================================
+>>> print("Student:",student_name)
+Student: Jiyansh
+>>> print("Grade:",grade)
+Grade: Grade 4
+>>> print("Monday Subjects:",monday_subjects)
+Monday Subjects: {'English', 'Sports', 'Hindi', 'Maths', 'Science', 'library'}
+>>> print("Tuesday Subjects:",tuesday_subjects)
+Tuesday Subjects: {'English', 'Sports', 'Maths', 'Art', 'Computer', 'History'}
+>>> print("Subjects on Both Days:",common_subjects)
+Subjects on Both Days: {'English', 'Sports', 'Maths'}
+>>> ("All Unique Subjects:",all_subjects)
+('All Unique Subjects:', {'English', 'Art', 'Science', 'Computer', 'Sports', 'Hindi', 'Maths', 'library', 'History'})
+>>> print("==================")
+==================
+>>>
